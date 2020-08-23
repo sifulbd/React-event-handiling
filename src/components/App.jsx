@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Users from "./Users";
+import Photos from "./Photos";
 
 function App() {
   const [headingText, setHeadingText] = useState("Hello");
@@ -19,7 +20,11 @@ function App() {
 
   return (
     <div className="container">
+      <Photos />
+      <br />
+
       <Users />
+
       <h1>{headingText}</h1>
       <input id="ip" type="text" placeholder="What's your name?" />
       <button

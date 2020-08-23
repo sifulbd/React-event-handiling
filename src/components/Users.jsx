@@ -8,7 +8,7 @@ function Users() {
       .then((data) => setUsers(data));
   }, []);
   return (
-    <div>
+    <div style={{ width: "100%", overflow: "hidden" }}>
       <h3>Total User here : {users.length}</h3>
       <ul>
         {users.map((user) => (
